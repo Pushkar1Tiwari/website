@@ -1,0 +1,192 @@
+*footer*/ footer {
+  position: static;
+  bottom: 0;
+}
+
+@media (max-height: 800px) {
+  footer {
+    position: static;
+  }
+  header {
+    padding-top: 40px;
+  }
+}
+
+.footer-distributed {
+  background-image: url("../img/footer.png");
+  background-size: cover;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  padding: 50px 50px 60px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 25%;
+}
+
+.footer-distributed h3 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.footer-distributed h3 span {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+}
+.footer-line {
+  margin: 10px auto;
+  align-items: center;
+  width: 40px;
+  height: 5px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#b80400),
+    to(#fb6b00)
+  );
+  background: -o-linear-gradient(left, #b80400, #fb6b00);
+  background: linear-gradient(to right, #b80400, #fb6b00);
+}
+
+/* footer subtitle */
+.footer__about-subtitle {
+  font-size: 15px;
+  line-height: normal;
+  color: grey;
+}
+
+/* Footer Center */
+
+.footer__inc-img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 98px;
+  height: 98px;
+}
+
+.footer-distributed .footer-center {
+  width: 40%;
+  position: relative;
+}
+
+.footer-distributed .footer-center i {
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer__inc-years {
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.footer__inc-title {
+  margin-top: 5px;
+  font-size: 30px;
+  font-weight: 700;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#b80400),
+    to(#fb6b00)
+  );
+  background: -o-linear-gradient(left, #b80400, #fb6b00);
+  background: linear-gradient(to right, #b80400, #fb6b00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer__inc-rights {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  color: grey;
+}
+
+.footer__inc-subtitle {
+  font-size: 15px;
+  line-height: normal;
+  color: grey;
+}
+.footer__inc-subtitle > a {
+  color: grey;
+  text-decoration: none;
+}
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 65px;
+  margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 25%;
+}
+
+.footer__links-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.privacy a{
+  font-size: 1rem;
+  color: grey;
+  text-decoration: none;
+}
+.privacy:hover a{
+  color: #ffffff;
+  transition: ease-in-out 300ms;
+}
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+@media (max-width: 880px) {
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+}

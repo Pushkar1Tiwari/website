@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VALOCRAFT</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-K3DV6ZL');</script>
+  <!-- End Google Tag Manager -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/faq.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3DV6ZL"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+    <!-- Navbar -->
+    <div class="nav-wrapper">
+      <nav id="navigation-bar">
+        <div class="brand-container mobile-nav">
+          <h1 class="logo-container">
+            <a href="index.html" class="logo">
+              <img
+                class="logo"
+                src="img/TGN_LOGO_200x200.png"
+                alt="logo"
+              />
+            </a>
+          </h1>
+          <div class="toggle-menu">
+            <button class="bars toggle-btn btn">
+              <img src="./img/threelines.png" alt="menu-button" id="toggle-icon">
+              </img>
+              <!-- <i class="fas fa-times"></i> -->
+            </button>
+          </div>
+        </div>
+
+        <!-- Small Screen Navbar -->
+        <div class="mobile-navbar-links">
+          <!-- Mobile  Link -->
+          <div class="mobile-dropdown-link">
+            <button class="mobile-nodropdown-link">
+              <a href="index.html" class="">Home</a>
+            </button>
+          </div>
+          <!-- Link End -->
+          <!-- Mobile Dropdown Link -->
+          <div class="mobile-dropdown-link">
+            <button
+              data-mobileDropdownId="m-dropdown-1"
+              class="mobile-dropdown-toggle"
+            >
+              Games
+              <img src="./img/triangle.png" alt="down-arrow">
+            </button>
+            <div id="m-dropdown-1" class="m-dropdown-content">
+              <div class="mobile-list">
+                <a href="survival.html">Survival</a><a href="bedwars.html">Bedwars</a><a href="arcade.html">Arcade</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Link End -->
+
+          <!-- Mobile  Link -->
+          <div class="mobile-dropdown-link">
+            <button class="mobile-nodropdown-link">
+              <a href="faq.html" class="">FAQ</a>
+            </button>
+          </div>
+          <!-- Link End -->
+
+          <!-- Mobile Dropdown Link -->
+          <div class="mobile-dropdown-link">
+            <button
+              data-mobileDropdownId="m-dropdown-2"
+              class="mobile-dropdown-toggle"
+            >
+              <a href="support.html" class="">Support</a>
+            </button>
+            <!-- <div id="m-dropdown-2" class="m-dropdown-content">
+              <div class="mobile-list">
+                <a href="https://discord.gg/xpJthBhKaC">Discord</a> <a href="#">Email</a>
+              </div>
+            </div> -->
+          </div>
+          <!-- Link End --> 
+          <!-- Mobile  Link -->
+          <!-- <div class="mobile-dropdown-link">
+            <button class="mobile-nodropdown-link">
+              <a href="#" class="">NoDropdownLink2</a>
+            </button>
+          </div> -->
+          <!-- Link End -->
+        </div>
+        <!-- Mobile Dropdown Ends Here -->
+
+        <!-- Big Screen Navbar -->
+        <div class="navbar-links">
+          <!-- Drop-down Link -->
+          <div class="dropdown-link">
+            <a href="index.html" class="link">Home</a>
+          </div>
+          <!--  Link end -->
+          <!-- Drop-down Link -->
+          <div class="dropdown-link">
+            <a href="./games.html" class="link" data-dropdownId="dropdown-1"
+              >Games</a
+            >
+            <div id="dropdown-1" class="dropdown-content">
+              <div class="list">
+                <a href="survival.html" class="s" >Survival</a><a href="bedwars.html" class="s">Bedwars</a><a href="arcade.html" class="s">Arcade</a>
+              </div>
+            </div>
+          </div>
+          <!--  Link end -->
+          
+          <!--  Link end -->
+          <!-- Drop-down Link -->
+          <div class="dropdown-link">
+            <a href="https://store.tgnetwork.in/" class="link">Store</a>
+          </div>
+          <!--  Link end -->
+                            
+          <!-- Drop-down Link -->
+          <div class="dropdown-link">
+            <a href="faq.html" class="link">FAQ</a>
+          </div>
+          <!--  Link end -->  
+          <!-- Drop-down Link -->
+          <div class="dropdown-link">
+            <a data-dropdownId="dropdown-2" href="support.html" class="link">Support</a>
+            <!-- <div id="dropdown-2" class="dropdown-content">
+              <div class="list">
+                <a href="https://discord.gg/xpJthBhKaC" class="s">Discord</a> <a href="#" class="s">Email</a>
+              </div>
+            </div> -->
+          </div>
+          <!--  Link end -->
+          <!-- Drop-down Link -->
+          <!-- <div class="dropdown-link">
+            <a href="#" data-dropdownId="dropdown-3" class="link link-dots">
+              <span class="dot"></span><span class="dot"></span
+              ><span class="dot"></span>
+            </a>
+            <div id="dropdown-3" class="dropdown-content">
+              <div class="list">
+                <a href="#">game1</a><a href="#">game2</a><a href="#">game3</a
+                ><a href="#">game4</a><a href="#">game5</a><a href="#">game6</a>
+              </div>
+            </div>
+          </div> -->
+          <!--  Link end -->
+        </div>
+<!-- 
+        <div class="nav-right nav-small-down">
+          <div class="game-id">
+            <a href="#" class="g-id">Game ID</a>
+          </div>
+          <div class="user-profile">
+            <a href="#" class="profile">
+              <button>
+                <i class="fas fa-user"></i>
+              </button>
+            </a>
+          </div>
+        </div> -->
+      </nav>
+    </div>
+    <!-- Navbar End -->
+    <main>
+      <header class="jumbotron">
+        <!-- <div class="jumbotron__logo">
+          <img class="logo" src="./img/tglogo.png" alt="tg-logo" />
+        </div> -->
+        <div class="stats"></div>
+      </header>
+      <section class="faq">
+        <div class="title-container">
+            <p class="title"><b>Frequently Asked Questins (FAQ)</b></p> 
+            <div class="Q-A">
+                <p class="question"><span class="q">Q.</span><b>How to join the Valocraft Minecraft Server?</b></p>
+                <p class="answer"><span class="q">A.</span> Open Minecraft -> Multiplayer -> Add Server -> Enter anything at Server Name and add "Play.tgnetwork.in" at Server Address then click on Done. Double click on the server name which you had entered before and you will be joined.</p>
+            </div>
+            <div class="Q-A">
+                <p class="question"><span class="q">Q.</span><b>How I can register and login?</b></p>
+                <p class="answer"><span class="q">A.</span> When you join for the first time, It will ask you to register. Type "/register (password) (password)" and replace (password) with any secure password which you use for login next time. Don't tell that password to anyone. When you join the server for the next time, it will ask to login. Type "/login (password)" and replace (password) with the password which you had set at the time of registering.</p>
+            </div><div class="Q-A">
+                <p class="question"><span class="q">Q.</span><b>What will happen if I forget my password?</b></p>
+                <p class="answer"><span class="q">A.</span> After you register, you should link your email by typing "/changeemailaddress (password) (email-address)". Replace (password) with your password and replace (email-address) with your email. So if you forget your password then type "/recoverypassword (email-address)" and you receive a new password at your mail. If you have not linked your email then there is no way to reset your password.</p>
+            </div><div class="Q-A">
+                <p class="question"><span class="q">Q.</span><b>Which minecraft launchers are allowed?</b></p>
+                <p class="answer"><span class="q">A.</span> You can join with any minecraft launcher except hacked clients and other anonymous clients.</p>
+            </div><div class="Q-A">
+                <p class="question"><span class="q">Q.</span><b>I am unable to join the server, what should I do?</b></p>
+                <p class="answer"><span class="q">A.</span> If you are using a cracked launcher and playing for the first time then go to namemc.com and search your username there. If it shows unavaible there then it means its taken by someone else who is using a premium launcher. Kindly change your username and make sure that it shows available on namemc.com. If it shows "Server is under maintenance" or it shows offline then it means that the server is currently offline. Join our Discord Server to get the updates.</p>
+            </div><div class="Q-A">
+              <p class="question"><span class="q">Q.</span><b>How can I play different gamemodes in the server?</b></p>
+              <p class="answer"><span class="q">A.</span> You can join a gamemode by clicking on the NPC around the spawn area. There are different NPC for each gamemode and their gamemode is written above their respective NPC. Alternatively, you can right click on your compass which is given in the lobby and you can select the gamemode from there.</p>
+            </div><div class="Q-A">
+                <p class="question"><span class="q">Q.</span><b>How can I play with my friends?</b></p>
+                <p class="answer"><span class="q">A.</span> For playing with friends, join same lobby then type "/party invite (friend-name)". Replace (friend-name) with the name of your friend with whom you want to play then join any match and he/she will be with you. You can also send friend request to your friend by typing "/friend add (friend-name)" and then your friend need to accept the friend request by typing "/friend accept (name)". You can type "/friend" or "/party" to get the list of all the commands.</p>
+            </div><div class="Q-A">
+                <p class="question"><span class="q">Q.</span><b>How can I create a clan and invite my friends in it?</b></p>
+                <p class="answer"><span class="q">A.</span> Type "/clan create (clan-name) (clan-tag)" to create your clan and replace (clan-name) with your clan name and replace (clan-tag) with your clan tag which will display and clan tag should be of few letters only.</p>
+            </div><div class="Q-A">
+                <p class="question"><span class="q">Q.</span><b>I found a cheater in the server, How can I report him?</b></p>
+                <p class="answer"><span class="q">A.</span> Type "/report (player-name) (reason)". replace (player-name) with the name of the cheater and replace (reason) with the reason that why you have reported that player. You can also report on our discord server by creating a ticket there.</p>
+            </div><div class="Q-A">
+                <p class="question"><span class="q">Q.</span><b>My question is not listed here. What should I do?</b></p>
+                <p class="answer"><span class="q">A.</span> Don't worry about it. Just join our discord server and create a support ticket then ask your queries there.</p>
+            </div>
+            <br><br><br><br>
+        </div>
+        
+
+      </section>
+    </main>
+    <!--footer-->
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3><span>About Us</span></h3>
+        <div class="footer-line"></div>
+
+        <p class="footer__about-subtitle">
+          Valocraft is a Minecraft: Java Edition network that provides players
+          with captivating and unique gameplay. This is the only official store
+          for the network.
+        </p>
+      </div>
+
+      <div class="footer-center">
+        <img
+          src="./img/Bottom_Logo.png"
+          alt="footer-logo"
+          class="footer__inc-img"
+        />
+        <br />
+        <p class="footer__inc-years">2021 ©</p>
+
+        <h2 class="footer__inc-title">VALOCRAFT.</h2>
+
+        <p class="footer__inc-rights">All Rights Reserved.</p>
+        <p class="footer__inc-subtitle">
+          We are not affiliated with Mojang AB. Powered by
+          <a href="https://valocraft.in/">VALOCRAFT.in</a>
+        </p>
+        <div class="footer-icons">
+          <a href="https://www.instagram.com/TGNetworkIn"
+            ><i><img src="./img/insta.png" alt="tg-instagram" width="50px" /></i
+          ></a>
+          <a href="https://discord.gg/xpJthBhKaC"
+            ><i><img src="./img/discord.png" alt="tg-discord" width="50px" /></i
+          ></a>
+          <!--<a href="#"><i class="fa fa-youtube"></i></a>-->
+        </div>
+      </div>  
+      <div class="footer-right">
+        <p class="footer__links-title">Useful Links</p>
+        <div class="footer-line"></div>
+        <p class="privacy"><a href="#">Privacy Policy</a></p>
+      </div>
+    </footer>
+    <!--Footer End-->
+    <script src="./js/script.js"></script>
+    <script src="./js/hid-nav.js"></script>
+  </body>
+</html>

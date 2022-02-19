@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  box-sizing: border-box;
+}
+
+.jumbotron {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 70vh;
+  background: url("../img/Channel_Art-min.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-origin: content-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(151, 150, 150);
+}
+.jumbotron-leaderboard {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 50vh;
+  background: url("../img/Channel_Art-min.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-origin: content-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(151, 150, 150);
+}
+.jumbotron__logo {
+  width: 250px;
+  margin-top: -10vh;
+}
+.stats {
+  /* border: 1px solid black; */
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5vw;
+  height: 100px;
+  width: 25%;
+  text-align: center;
+  position: relative;
+}
+.server-status{
+  padding: 2vh;
+  position: absolute;
+  width: 100%;
+}
+.logo {
+  height: 100%;
+  width: 100%;
+}
+.content-container {
+  border-bottom: 1px solid rgb(151, 150, 150);
+  width: 100%;
+  /* background-color: #828282; */
+  display: flex;
+  margin: auto;
+}
+.content--text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blur-text {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.content--text-wrapper {
+  text-align: center;
+  width: 80%;
+}
+.content--description{
+  padding: 2vh;
+}
+.read-more{
+  width: 18%;
+  margin: auto;
+  padding: 0.5vw;
+  margin-top: 1vh;
+  font-size: 1rem;
+  border: .1vw solid black;
+  border-radius: 0.3vw;
+  color: aliceblue;
+  background-color: #2a2a2b;
+}
+.read-more:hover{
+  background-color: aliceblue;
+  transition: 300ms ease-in-out;
+}
+.read-more:hover a{
+  color: black;
+  font-weight: 900;
+}
+.content-item {
+  width: 50%;
+  /* border: 1px solid black; */
+  height: 50vh;
+}
+.content--image {
+  display: flex;
+  align-items: center;
+  justify-content: content;
+  position: relative;
+}
+.content--image > img {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  /* height: 10vh; */
+  width: 45vw;
+  transform: translateY(-50%);
+}
+.flex-reverse {
+  flex-direction: row-reverse;
+  color: white;
+  font-weight: 500;
+}
+.overflow-reverse {
+  overflow: hidden;
+}
+.flex-reverse img {
+  left: 3rem;
+}
+.with-background1 {
+  background-image: url("../img/tg-12.png");
+  background-size: cover;
+  background-position: center;
+}
+.with-background2 {
+  background-image: url("../img/tg-4.png");
+  background-size: cover;
+  background-position: center;
+}
+.with-background3 {
+  background-image: url("../img/tg-8.png");
+  background-size: cover;
+  background-position: center;
+}
+.with-background4 {
+  background-image: url("../img/tg-6.png");
+  background-size: cover;
+  background-position: center;
+}
+.with-background5 {
+  background-image: url("../img/tg-13.png");
+  background-size: cover;
+  background-position: center;
+}
+.with-background6 {
+  background-image: url("../img/tg-14.png");
+  background-size: cover;
+  background-position: center;
+}
+.with-background7 {
+  background-image: url("../img/tg-15.png");
+  background-size: cover;
+  background-position: center;
+}
+.with-background8 {
+  background-image: url("../img/tg-16.png");
+  background-size: cover;
+  background-position: center;
+}
+.with-background9 {
+  background-image: url("../img/tg-17.png");
+  background-size: cover;
+  background-position: center;
+}
+.with-background10 {
+  background-image: url("../img/tg-18.png");
+  background-size: cover;
+  background-position: center;
+}
+.color-light {
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .jumbotron{
+    background-image: url(../img/Channel_Art-min.jpg);
+  }
+  .content-container {
+    flex-direction: column-reverse;
+    border-bottom: 1px solid grey;
+  }
+  .content-item {
+    
+    width: 100%;
+    height: 300px;
+  }
+  .content--image {
+    overflow-x: hidden;
+  }
+  .content--heading {
+    font-size: 1.4rem;
+  }
+  .read-more{
+    width: 30%;
+    border-radius: 1vw;
+    font-size: 1rem;
+  }
+  .content--image > img {
+    left: 2.3rem;
+    /* align-items: center; */
+    /* height: 200px; */
+    /* height: 150px; */
+    width: 80vw;
+  }
+  .jumbotron__logo {
+    width: 200px;
+  }
+  .content--text-wrapper {
+    width: 90%;
+  }
+  .stats{
+    width: 80%;
+    border-radius: 10vh;
+  }
+}

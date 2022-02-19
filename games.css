@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.jumbotron {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 70vh;
+  background: url("../img/Channel_Art-min.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-origin: content-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(151, 150, 150);
+}
+.jumbotron__logo {
+  width: 250px;
+  margin-top: -10vh;
+}
+.stats {
+  /* border: 1px solid black; */
+  height: 100px;
+  width: 80%;
+}
+.logo {
+  height: 100%;
+  width: 100%;
+}
+.games {
+  display: grid;
+  padding: 3rem 4rem;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  place-items: center;
+  gap: 3rem;
+}
+.game-container {
+  transition: all 500ms ease;
+  box-shadow: 1px 1px 0.5rem rgb(167, 167, 167);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.game-container:hover {
+  transform: scale(1.01);
+  box-shadow: 1px 1px 0.5rem 0.2rem rgb(72, 72, 72);
+}
+.game-details {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.game-tagline,
+.game-link {
+  text-align: center;
+  color: black;
+}
+.game-tagline {
+  font-weight: 600;
+  color: rgb(0, 133, 249);
+}
+.game-link {
+  color: rgb(11, 5, 5);
+  font-size: 1.5rem;
+  margin: 0.2rem 0;
+}
+.game-thumbnail {
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .games {
+    gap: 1rem;
+    padding: 2rem 0;
+    grid-template-columns: 90%;
+    place-content: center;
+    /* padding: 1rem 1rem; */
+  }
+  
+}
+@media only screen and (max-width: 768px) {
+  .jumbotron{
+    background-image: url(../img/Channel_Art-min.jpg);
+  }
+  .content-container {
+    flex-direction: column-reverse;
+    border-bottom: 1px solid grey;
+  }
+  .content-item {
+    
+    width: 100%;
+    height: 300px;
+  }
+  .content--image {
+    overflow-x: hidden;
+  }
+  .content--heading {
+    font-size: 1.4rem;
+  }
+  .read-more{
+    width: 50%;
+  }
+  .content--image > img {
+    left: 2.3rem;
+    /* align-items: center; */
+    /* height: 200px; */
+    /* height: 150px; */
+    width: 80vw;
+  }
+  .jumbotron__logo {
+    width: 200px;
+  }
+  .content--text-wrapper {
+    width: 90%;
+  }
+  .stats{
+    width: 80%;
+    border-radius: 10vh;
+  }
+}

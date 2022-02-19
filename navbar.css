@@ -1,0 +1,256 @@
+
+button {
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+button:focus {
+  outline: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.nav-wrapper {
+  z-index: 30;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  color: white;
+  transform: translateX(-50%);
+}
+nav {
+  background: transparent;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.nav-scrolled {
+display: none;
+}
+
+.mobile-navbar-links {
+  display: none;
+}
+h1.logo-container {
+  /* border: 1px solid rgb(230, 0, 0); */
+  padding: 0.6rem 0.5rem;
+  width: 4.5rem;
+}
+img.logo {
+  width: 100%;
+}
+.toggle-icon {
+  background: url(https://cdn.supercell.com/supercell.com/210319070834/all/themes/supercell/img/18/btn_mobile_menu18.png)
+    no-repeat;
+}
+
+.toggle-menu {
+  display: none;
+}
+.bars {
+  background: transparent;
+}
+.mobile-nav {
+  display: block;
+  position: relative;
+  /* border: 1px solid green; */
+  width: 10%;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  /* border: 1px solid blue; */
+}
+.game-id {
+  width: 60%;
+  display: grid;
+  place-items: center;
+  /* border: 1px solid green; */
+}
+.user-profile {
+  width: 40%;
+  display: grid;
+  place-items: center;
+}
+.profile {
+  width: 80%;
+  height: 80%;
+  display: grid;
+  place-items: center;
+  border-left: 1px solid grey;
+}
+.profile > button {
+  /* border: 1px solid springgreen; */
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: rgb(238, 238, 238);
+}
+
+/*
+  ============
+  Navbar Links
+  ============ 
+  */
+
+.navbar-links {
+  flex: 1;
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+.link {
+  margin-right: 2rem;
+  color: rgba(255, 255, 255, 0.717);
+  transition: all 300ms ease-in-out;
+}
+.link:hover {
+  color: white;
+}
+.link-dots {
+  /* border: 1px solid rgb(255, 255, 255); */
+  display: flex;
+  padding: 0.6rem 0.5rem;
+  align-items: center;
+  width: 2.5rem;
+  background-color: rgba(128, 128, 128, 0.249);
+  border-radius: 0.5rem;
+  justify-content: space-around;
+}
+.dropdown-content .s:hover {
+  color: white;
+}
+.dot {
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.717);
+}
+.dropdown-content {
+  display: flex;
+  z-index: -1;
+  /* border: 1px solid rgb(211, 0, 0); */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -999px;
+  left: 0;
+  background-color: transparent;
+  align-items: center;
+  transition: top 400ms ease;
+}
+
+.dropdown-content > .list > a {
+  color: rgba(255, 255, 255, 0.621);
+  /* border: 1px solid red; */
+  padding: 0 1.5rem;
+}
+.show-dropdown {
+  top: 2.8rem;
+}
+.brand-container {
+  width: 5rem;
+}
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+    height: 4rem;
+    overflow: hidden;
+    transition: all 300ms ease;
+    background-color: black;
+  }
+  .mobile-navbar-links {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.5rem;
+    padding-top: 1rem;
+  }
+  .mobile-nav-visible {
+    height: 100vh;
+  }
+  .nav-right {
+    display: block;
+  }
+  .mobile-nav {
+    width: 100%;
+  }
+  .toggle-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .toggle-btn {
+    border: 1px solid white;
+    cursor: pointer;
+    border: none;
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+  .navbar-links {
+    display: none;
+  }
+  .nav-small-down {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    padding-left: 0.5rem;
+    padding-top: 1rem;
+    /* border: 1px solid white; */
+    width: 100%;
+  }
+  .mobile-dropdown-toggle,
+  .mobile-nodropdown-link {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .m-dropdown-content {
+    display: block;
+    /* border: 1px solid white; */
+    height: 0;
+    overflow: hidden;
+    transition: all 300ms ease;
+  }
+  .mobile-list {
+    background-image: linear-gradient(to top, transparent);
+    border-radius: 0.2rem;
+    /* background-color: rgba(9, 9, 9, 0.939); */
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0rem 1rem 2rem;
+  }
+  .user-profile {
+    display: block;
+    width: 100%;
+  }
+  .game-id {
+    display: block;
+    width: 100%;
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  .profile {
+    display: block;
+    border: none;
+    width: 100%;
+    position: relative;
+  }
+  .profile > button::after {
+    content: "My Profile";
+    position: absolute;
+    left: 2rem;
+  }
+  .brand-container {
+    width: 100%;
+  }
+}

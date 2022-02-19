@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.jumbotron {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 70vh;
+  background: url("../img/Channel_Art-min.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-origin: content-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(151, 150, 150);
+}
+.jumbotron__logo {
+  width: 250px;
+  margin-top: -10vh;
+}
+.stats {
+  /* border: 1px solid black; */
+  height: 100px;
+  width: 80%;
+}
+.logo {
+  height: 100%;
+  width: 100%;
+}
+.faq {
+    width: 100%;
+    min-height: 70vh;
+    padding: 1rem;
+}
+.title-container{
+    width: 80vw;
+    min-height: 60vh;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+}
+.title{
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(71, 71, 71);
+    padding: 2rem;
+}
+.Q-A{
+    padding-top: 2vh;
+}
+.question{
+    font-size: 1.5rem;
+}
+.q{
+    font-size: 2rem;
+}
+.answer{
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .title{
+    font-size: 1.5rem;
+  }
+  .Q-A{
+      padding-top: 1vh;
+  }
+  .question{
+      font-size: 1rem;
+  }
+  .q{
+      font-size: 1.5rem;
+  }
+  .answer{
+      font-size: .8rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .jumbotron{
+    background-image: url(../img/Channel_Art-min.jpg);
+  }
+  .content-container {
+    flex-direction: column-reverse;
+    border-bottom: 1px solid grey;
+  }
+  .content-item {
+    
+    width: 100%;
+    height: 300px;
+  }
+  .content--image {
+    overflow-x: hidden;
+  }
+  .content--heading {
+    font-size: 1.4rem;
+  }
+  .read-more{
+    width: 50%;
+  }
+  .content--image > img {
+    left: 2.3rem;
+    /* align-items: center; */
+    /* height: 200px; */
+    /* height: 150px; */
+    width: 80vw;
+  }
+  .jumbotron__logo {
+    width: 200px;
+  }
+  .content--text-wrapper {
+    width: 90%;
+  }
+  .stats{
+    width: 80%;
+    border-radius: 10vh;
+  }
+}
